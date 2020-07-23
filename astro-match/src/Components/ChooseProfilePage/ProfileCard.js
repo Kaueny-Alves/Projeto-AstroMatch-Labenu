@@ -1,56 +1,50 @@
-import React from 'react';
-import styled from 'styled-components';
-import Typography from '@material-ui/core/Typography';
-import Card from '@material-ui/core/Card';
-import { makeStyles } from '@material-ui/core/styles';
+import React from "react";
+import Typography from "@material-ui/core/Typography";
+import Card from "@material-ui/core/Card";
+import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles({
-     root: {
-       maxWidth: 300,
-       textAlign:"center",
-       display:"block",
-       margin:" auto",
-       marginTop: 20,
-     },
-     
-   });
-   
+import CardHeader from "@material-ui/core/CardHeader";
+import CardMedia from "@material-ui/core/CardMedia";
+import CardContent from "@material-ui/core/CardContent";
+import { CardActionArea } from "@material-ui/core";
 
-
-const ProfileContainer = styled.div` 
-     margin: 16px;
-    
-
-`;
-
-const ProfileImg = styled.img` 
-     width: 100%;
-     height: 350px;
-     display: block;
-`;
-
-const ProfileInfo = styled.div` 
-     padding: 0 16px;
-`;
+const useStyles = makeStyles(() => ({
+  root: {
+    textAlign: "center",
+    display: "block",
+    margin: " auto",
+    maxWidth: 345,
+    marginTop: 20,
+    marginBottom: 20,
+  },
+  media: {
+    paddingTop: "56.25%", // 16:9
+    height: 40,
+}
+}));
 
 
+function ProfileCard(props) {
+  const profile = props.profile;
+  const classes = useStyles();
 
-function ProfileCard (props) {
-     const profile = props.profile
-     const classes = useStyles()
-
-    return(
-     <Card className={classes.root} >
-          <ProfileContainer>
-          <ProfileImg src={profile.photo} alt="imagem"/>
-          <ProfileInfo>
-          <Typography gutterBottom variant="h5" component="h2" >{profile.name}, {profile.age}</Typography>
-          <Typography variant="body1"  component="p" >{profile.bio}</Typography>
-          </ProfileInfo>
-          </ProfileContainer>
-     </Card>
-    )
+  return (
+    <Card className={classes.root}>
+      <CardHeader title={profile.name} subheader={profile.age} />
+      <CardActionArea>
+      <CardMedia
+        className={classes.media}
+        image={profile.photo}
+        title="imagem do perfil"
+      />
+      </CardActionArea>
+      <CardContent>
+        <Typography variant="body2" color="textSecondary" component="p">
+          {profile.bio}
+        </Typography>
+      </CardContent>
+    </Card>
+  );
 }
 
-export default ProfileCard
-;
+export default ProfileCard;
