@@ -7,14 +7,14 @@
  </p>
 
 
-<h1 align="center"> Tecnologia </h1>Tecnologia
+<h1 align="justify"> Tecnologia </h1>Tecnologia
 
 
 
-<h1 align="center"> Link do surge </h1>
+<h1 align="justify"> Link do surge </h1>
 
 <p align="justify"> matchkau.surge.sh </p>
 
-<h1 align="center"> Prints </h1>
+<h1 align="justify"> Prints </h1>
 
 
