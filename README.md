@@ -15,6 +15,7 @@ matchkau.surge.sh
 
 #Prints
 
-
-
-
+Captura de Tela 2020-07-23 às 15.47.03
+Captura de Tela 2020-07-23 às 15.48.31
+Captura de Tela 2020-07-23 às 15.49.06
+Captura de Tela 2020-07-23 às 15.49.45
