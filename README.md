@@ -17,8 +17,6 @@
 
 <h1 align="justify"> Prints </h1>
 
-<div align="center">
-    <img src="Captura de Tela 2020-07-23 às 15.48.31.jpg.png" width="400px"</img> 
-</div>
+https://github.com/Kaueny-Alves/Projeto-AstroMatch-Labenu/issues/2#issue-665618311
 
 
